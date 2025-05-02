@@ -15,9 +15,10 @@ model Post {
   createdAt DateTime @default(now())
 }
 
-model Article {
+model Contact {
   id        Int      @id @default(autoincrement())
-  title     String
-  body      String
+  name      String
+  email     String
+  message   String
   createdAt DateTime @default(now())
 }
