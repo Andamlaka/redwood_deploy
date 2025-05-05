@@ -1,17 +1,15 @@
 import { Metadata } from '@redwoodjs/web'
-import ArticleCell from 'src/components/ArticleCell'
+import PostCell from 'src/components/Post/PostCell'
 
-interface Props {
-  id: number;
-  
+interface ArticlePageProps {
+  id: number // This comes from the route param
 }
 
-const ArticlePage = ({ id }: Props) => {
+const ArticlePage = ({ id }: ArticlePageProps) => {
   return (
     <>
       <Metadata title="Article" description="Article page" />
-
-      <ArticleCell id={id}/>
+      <PostCell id={id} />
     </>
   )
 }

@@ -7,8 +7,10 @@
     ]
   },
   "devDependencies": {
+    "@redwoodjs/auth-dbauth-setup": "8.6.1",
     "@redwoodjs/core": "8.6.1",
-    "@redwoodjs/project-config": "8.6.1"
+    "@redwoodjs/project-config": "8.6.1",
+    "prisma": "6.6.0"
   },
   "eslintConfig": {
     "extends": "@redwoodjs/eslint-config",
@@ -25,6 +27,7 @@
     "@storybook/react-dom-shim@npm:7.6.20": "https://verdaccio.tobbe.dev/@storybook/react-dom-shim/-/react-dom-shim-8.0.8.tgz"
   },
   "dependencies": {
+    "@prisma/client": "6.6.0",
     "@redwoodjs/web": "^8.6.1",
     "react": "18.3.1",
     "react-dom": "18.3.1"

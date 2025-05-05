@@ -1,4 +1,5 @@
 import type { FindPostById, FindPostByIdVariables } from 'types/graphql'
+import Article from 'src/components/Article/Article'
 
 import type {
   CellSuccessProps,
@@ -31,5 +32,5 @@ export const Failure = ({ error }: CellFailureProps<FindPostByIdVariables>) => (
 export const Success = ({
   post,
 }: CellSuccessProps<FindPostById, FindPostByIdVariables>) => {
-  return <Post post={post} />
+  return <Article article={post} />
 }

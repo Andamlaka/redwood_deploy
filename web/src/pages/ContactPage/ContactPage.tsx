@@ -32,7 +32,7 @@ interface FormValues {
 }
 
 const ContactPage = () => {
-  const formMethods = useForm()
+  const formMethods = useForm<FormValues>()
 
   const [create, { loading, error }] = useMutation<
     CreateContactMutation,
@@ -47,6 +47,7 @@ const ContactPage = () => {
   const onSubmit: SubmitHandler<FormValues> = (data) => {
     create({ variables: { input: data } })
   }
+  
 
   return (
     <>

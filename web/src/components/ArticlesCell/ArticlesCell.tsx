@@ -27,7 +27,7 @@ export const Empty = () => <div>Empty</div>
 export const Failure = ({
   error,
 }: CellFailureProps<ArticlesQueryVariables>) => (
-  <div style={{ color: 'red' }}>Error: {error.message}</div>
+  <div className="error-message">Error: {error?.message}</div>
 )
 
 export const Success = ({
