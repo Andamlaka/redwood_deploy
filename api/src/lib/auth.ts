@@ -1,7 +1,7 @@
 import { AuthenticationError, ForbiddenError } from '@redwoodjs/graphql-server'
 import { db } from './db'
 
-import type { DbAuthSession } from '@redwoodjs/api'
+//import type { DbAuthSession } from '@redwoodjs/api'
 
 export const getCurrentUser = async (session) => {
   return await db.user.findUnique({

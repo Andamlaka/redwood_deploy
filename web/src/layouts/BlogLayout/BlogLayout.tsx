@@ -18,7 +18,7 @@ const BlogLayout = ({ children }: BlogLayoutProps) => {
           </h1>
           {isAuthenticated ? (
             <div>
-              <span>Logged in as {currentUser.email}</span>{' '}
+              <span>Logged in as {currentUser?.email as string}</span>{' '}
               <button type="button" onClick={logOut}>
                 Logout
               </button>
@@ -41,7 +41,7 @@ const BlogLayout = ({ children }: BlogLayoutProps) => {
           </ul>
         </nav>
       </header>
-      <main>{children}</main>
+      <main>{children as React.ReactNode}</main>
     </>
   )
 }
